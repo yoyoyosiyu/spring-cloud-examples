@@ -10,6 +10,7 @@
 
     <modules>
         <module>kafka-producer</module>
+        <module>spring-cloud-configserver</module>
     </modules>
 
 

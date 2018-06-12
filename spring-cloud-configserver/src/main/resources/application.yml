@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.kaigong1688.com:3000/yoyoyosiyu/spring-cloud-configure.git
+          username: yoyoyosiyu
+          password: hellomatrix
