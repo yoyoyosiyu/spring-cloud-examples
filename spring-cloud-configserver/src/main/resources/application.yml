@@ -11,3 +11,8 @@ spring:
           uri: http://git.kaigong1688.com:3000/yoyoyosiyu/spring-cloud-configure.git
           username: yoyoyosiyu
           password: hellomatrix
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

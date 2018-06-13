@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: sso
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8888/
+
+server:
+  port: 7020
