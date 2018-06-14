@@ -1,0 +1,6 @@
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: yingiloveyou
+    alias: mainserver
+    secret: yingiloveyou

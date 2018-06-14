@@ -6,7 +6,7 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
+      uri: http://localhost:8888/config/
 
 server:
   port: 7020
