@@ -3,19 +3,10 @@ server:
 
 spring:
   application:
-    name: config-client
-  cloud:
-    config:
-      server:
-        git:
-          uri: http://git.kaigong1688.com:3000/yoyoyosiyu/spring-cloud-configure.git
-          username: yoyoyosiyu
-          password: hellomatrix
-        bootstrap: true
-        prefix: /config
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+    name: configserver
+  security:
+    user:
+      name: administrator
+      password: hellomatrix
+
 

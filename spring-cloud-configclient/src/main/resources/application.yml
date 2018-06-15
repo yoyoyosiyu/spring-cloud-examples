@@ -1,6 +1,0 @@
-spring:
-  rabbitmq:
-    host: 112.74.73.128
-    port: 5672
-    username: guest
-    password: hellomatrix

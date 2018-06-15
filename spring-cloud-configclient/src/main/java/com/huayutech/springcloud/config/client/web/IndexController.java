@@ -9,15 +9,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @Value("${spring.boot}")
+    //@Value("${spring.boot}")
     String greeting;
 
     @Value("${application.company}")
     String companyName;
 
+    @Value("${spring.datasource.url}")
+    String dataSourceUrl;
+
     @GetMapping("/")
     public String doGet() {
         return greeting +"," + companyName;
+    }
+
+    @GetMapping("/datasource")
+    public String doGetDatasource() {
+        return dataSourceUrl;
     }
 
 }

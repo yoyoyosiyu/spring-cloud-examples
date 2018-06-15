@@ -5,8 +5,11 @@ spring:
   cloud:
     config:
       label: master
-      profile: dev
       uri: http://localhost:8888/config/
+      username: administrator
+      password: hellomatrix
+  profiles:
+    active: prod, mysql
 
 server:
   port: 7020

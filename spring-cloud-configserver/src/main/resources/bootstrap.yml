@@ -4,3 +4,25 @@ encrypt:
     password: yingiloveyou
     alias: mainserver
     secret: yingiloveyou
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh, shutdown
+
+spring:
+  application:
+      name: configserver
+  cloud:
+      config:
+        server:
+          git:
+            uri: http://git.kaigong1688.com:3000/yoyoyosiyu/spring-cloud-configure.git
+            username: configserver
+            password: hellomatrix
+          bootstrap: true
+          prefix: /config
+
